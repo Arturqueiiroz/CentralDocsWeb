@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastre.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <section class="sessao">
+        <div>
+            <img class="logoCentralDocs" src="./img/LogoCentralDocsNova.png" alt="logoCentralDocs">
+        </div>
+
+        <div>
+            <form class="formulario">
+
+                <label for="nomeCompleto">Nome:</label>
+                <input type="text" id="nomeCompleto" placeholder="Nome Completo:">
+
+                <label for="CPF">CPF:</label>
+                <input type="text" id="CPF" placeholder="CPF:" maxlength="11">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email:">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Senha:">
+
+                <label for="ConfirmeSuaSenha">Confirme sua senha:</label>
+                <input type="password" id="ConfirmeSuaSenha" placeholder="Confirme sua senha:">
+
+                <div class="botoes">
+                    <button id="btnCadastrar" type="button" class="botao1">Cadastrar</button>
+                    <button onclick="event.preventDefault(); history.back()" class="botao2">Voltar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div id="mensagemCard" class="mensagem-card oculto">
+            <div class="mensagem-conteudo">
+                <p id="mensagemTexto"></p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./javacript/cadastre.js"></script>
+</body>
+</html>
