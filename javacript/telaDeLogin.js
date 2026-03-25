@@ -20,7 +20,7 @@ async function entrar(event) {
 
     try {
 
-        const resposta = await fetch("https://localhost:7062/Usuarios/login", {
+        const resposta = await fetch("https://localhost:7196/api/Usuario/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
