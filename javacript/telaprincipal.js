@@ -1,3 +1,4 @@
 document.getElementById("entrar").addEventListener("click", function(){
-    window.location.href = "http://127.0.0.1:5501/telaDeLogin.html";
+    window.location.href = "./html/telaDeLogin.html";
+    console.log("Clicou")
 });
