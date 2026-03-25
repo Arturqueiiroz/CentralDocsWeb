@@ -34,11 +34,11 @@ async function cadastrarUsuario() {
         cpf: CPF.value,
         email: email.value,
         senha: senha.value,
+        confirmarSenha: confirmeSuaSenha.value,
         nome: nomeCompleto.value
     };
-
     try {
-        const resposta = await fetch("https://localhost:7062/Usuarios/create", {
+        const resposta = await fetch("https://localhost:7196/api/Usuario/CriarUsuario", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
