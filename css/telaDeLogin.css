@@ -85,15 +85,13 @@ h1 {
 .button {
     border: none;
     margin: 10px;
-    padding: 17px 24px;
-    font-weight: 800;
-    color: var(--Branco-color);
+    padding: 15px 22px;
     font-size: 15px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
-    background: linear-gradient(180deg, #234A74 10%, #2F81E6 100%);
+    cursor: pointer;    
+    background-color: var(--primeirar-color);
 }
 
 .texto {

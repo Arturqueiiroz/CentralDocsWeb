@@ -29,6 +29,10 @@ async function cadastrarUsuario() {
         mostrarMensagem("CPF precisa conter 11 números");
         return;
     }
+    if (!email.value.includes("@") || !email.value.includes(".")) {
+        mostrarMensagem("Digite um e-mail válido");
+    return;
+    }
 
     const body = {
         cpf: CPF.value,

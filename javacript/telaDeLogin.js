@@ -1,6 +1,6 @@
 const btnEntrar = document.querySelector("#btnEntrar");
 const email = document.querySelector("#email");
-const senha = document.querySelector("#senha");
+const senha = document.querySelector("#senha"); 
 
 btnEntrar.addEventListener("click", entrar);
 
@@ -32,7 +32,7 @@ async function entrar(event) {
 
         if (resposta.ok) {
 
-            window.location.href = "./esqueceuSenha.html";
+            window.location.href = "./usuario.html";
 
         } else {
 

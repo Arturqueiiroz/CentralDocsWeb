@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueceu a senha</title>
+    <link rel="stylesheet" href="/css/esqueceuSenha.css">
+    <title>TelaDeLogin</title>
 </head>
+
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut sequi distinctio sunt possimus incidunt, quidem, error sint cum quibusdam at aliquid assumenda expedita nam sapiente nobis illum magnam molestiae!</p>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut sequi distinctio sunt possimus incidunt, quidem, error sint cum quibusdam at aliquid assumenda expedita nam sapiente nobis illum magnam molestiae!</p>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut sequi distinctio sunt possimus incidunt, quidem, error sint cum quibusdam at aliquid assumenda expedita nam sapiente nobis illum magnam molestiae!</p>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut sequi distinctio sunt possimus incidunt, quidem, error sint cum quibusdam at aliquid assumenda expedita nam sapiente nobis illum magnam molestiae!</p>
+    <section class="sessao">
+        <div class="ImagemDiv">
+            <img class="imagem" src="/img/LogoCentralDocsNova.png" alt="LogoCentralDocsNova">
+        </div>
+        <h1>Esqueceu a senha?</h1>
+        <div class="formularioDiv">
+            <form class="formulario">
+                <label for="Email">Digite seu email para recuperar a se senha</label>
+                <input type="text" id="email" placeholder="Email:" name="email">
+
+            </form>                
+            <div class="divButton">
+                    <button id="btnRedefinicao" class="button">Enviar link para redefinção de senha</button>
+                </div>
+            <div>
+                <p class="texto"><a href="/index.html">Voltar para tela inicial</a></p>
+            </div>
+        </div>
+                <div id="mensagemCard" class="mensagem-card oculto">
+            <div class="mensagem-conteudo">
+                <p id="mensagemTexto"></p>
+            </div>
+        </div>
+    </section>
+    <script src="/javacript/esqueceuSenha.js"></script>
 </body>
 </html>

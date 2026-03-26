@@ -1,0 +1,143 @@
+:root {
+    --primeirar-color: #0877ed;
+    --cinza-color: #cfe3f8;
+    --Branco-color: #FFFFFF;
+    --Black-color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: var(--primeirar-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.sessao {
+    box-shadow: 14px 14px 5px 0px #000000fb;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 60vh;
+    border-radius: 20px;
+}
+
+.ImagemDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem {
+    height: 100px;
+    margin: 15px 0;
+}
+
+.formularioDiv {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario label {
+    margin: 10px 0;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #999;
+    background-color: var(--cinza-color);
+}
+h1 {
+    font-size: 25px;
+}
+
+.esqueceuSenha {
+    font-size: 14px;
+    margin: 2px;
+    display: flex;
+    justify-content: right;
+    margin: 5px;
+}
+
+.button {
+    border: none;
+    margin: 10px;
+    padding: 15px 20px;
+    color: var(--Branco-color);
+    font-size: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;    
+    white-space: nowrap;
+    background-color: var(--primeirar-color);
+}
+
+.texto a {
+    margin: 14px 0;
+    text-decoration: none;
+    color: var(--Black-color);
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.divButton {
+    display: flex; 
+    justify-content: center;
+}
+
+.mensagem-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    font-weight: 700;
+    color: var(--Branco-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem-conteudo {
+    background:var(--primeirar-color);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    animation: aparecer 0.2s ease-in-out;
+}
+
+.mensagem-card.oculto {
+    display: none;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
