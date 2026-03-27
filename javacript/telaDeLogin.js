@@ -32,7 +32,7 @@ async function entrar(event) {
 
         if (resposta.ok) {
 
-            window.location.href = "./usuario.html";
+            window.location.href = "./telaEntrar.html";
 
         } else {
 
