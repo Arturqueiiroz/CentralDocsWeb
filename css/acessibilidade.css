@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d63c9;
+    font-family: Arial, sans-serif;
+}
+
+.pagina-acessibilidade {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 20px;
+}
+
+.banner {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.imagemBanner img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+}
+
+.conteudoBanner {
+    flex: 1;
+    text-align: center;
+}
+
+.conteudoBanner h1 {
+    font-size: 36px;
+    color: #111;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f5f5f5;
+    width: 280px;
+    min-height: 250px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.beneficios {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #17457a;
+    font-size: 24px;
+}
+
+.blocoTexto {
+    margin-bottom: 25px;
+}
+
+.blocoTexto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #17457a;
+}
+
+.blocoTexto p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+}

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.pagina-atual {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-left: 2px;
+}
+
+.header {
+    width: 100%;
+    min-height: 110px;
+    background: linear-gradient(90deg, #FFFFFF, #3082D9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    gap: 20px;
+}
+
+.menu-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-menu {
+    background: none;
+    border: none;
+    color: #0b4da2;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 145px;
+    height: auto;
+    display: block;
+}
+
+.barra-pesquisa {
+    flex: 1;
+    max-width: 590px;
+    background-color: #f4f4f4;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 42px;
+}
+
+.barra-pesquisa input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+}
+
+.barra-pesquisa input::placeholder {
+    color: #9a9a9a;
+}
+
+.btn-microfone {
+    background: none;
+    border: none;
+    color: #0b4da2;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.acoes-direita {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.btn-icone {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.perfil i {
+    font-size: 32px;
+}
