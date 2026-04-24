@@ -1,89 +1,108 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/telaEntrar.css" />
     <title>CentralDocs</title>
+
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/telaEntrar.css" />
+    <link rel="stylesheet" href="../css/footerPaginas.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+
   <body>
     <header id="header"></header>
 
-    <main class="home">
-      <section class="hero">
-        <div class="hero-container">
-          <div class="hero-title">
-            <h1>Seja bem-vindo <span>ao CentralDocs</span></h1>
-          </div>
-
-          <div class="hero-banner">
-            <img
-              src="../img/ChatGPT Image 23 de abr. de 2026, 15_03_20.png"
-              alt="Banner CentralDocs"
-            />
-          </div>
-
-          <div class="hero-action">
-            <a href="#" class="btn-primary">
-              Comece aqui a preencher<br />
-              seu formulário
-            </a>
-          </div>
+    <main class="home-main">
+      <section class="home-content">
+        <div class="home-title">
+          <h2>Seja bem vindo ao <span>CentralDocs</span></h2>
         </div>
-      </section>
 
-      <section class="content-home">
-        <div class="content-container">
-          <section class="atalhos">
-            <div class="atalhos-grid">
-              <a href="#" class="atalho-card">
-                <div class="atalho-icon">👤</div>
-                <span>Perfil</span>
-              </a>
+        <section class="slider">
+          <button class="arrow left" onclick="prevSlide()">❮</button>
 
-              <a href="#" class="atalho-card">
-                <div class="atalho-icon">📁</div>
-                <span>Documentos</span>
-              </a>
-            </div>
-          </section>
-
-          <section class="listas">
-            <div class="listas-topos">
-              <div class="lista-topo">Mais acessados</div>
-              <div class="lista-topo">Destaques</div>
+          <div class="slides">
+            <div class="slide active">
+              <img
+                src="../img/ChatGPT Image 23 de abr. de 2026, 15_03_20.png"
+                alt="Banner CentralDocs"
+                class="slide-img"
+              />
             </div>
 
-            <div class="listas-grid">
-              <div class="lista-card">
-                <ol>
-                  <li>Carteirinha</li>
-                  <li>CNH</li>
-                  <li>RG digital</li>
-                  <li>Título</li>
-                  <li>Cadastro CPF</li>
-                  <li>Comprovante de residência</li>
-                </ol>
-              </div>
-
-              <div class="lista-card">
-                <ol>
-                  <li>Passaporte</li>
-                  <li>CNH</li>
-                  <li>RG digital</li>
-                  <li>E-Título</li>
-                  <li>Cadastro CPF</li>
-                  <li>Comprovante de residência</li>
-                </ol>
-              </div>
+            <div class="slide">
+              <img
+                src="../img/acessibilidade.png"
+                alt="Banner acessibilidade"
+                class="slide-img"
+              />
             </div>
-          </section>
-        </div>
+
+            <div class="slide">
+              <img
+                src="../img/seguranca.png"
+                alt="Banner segurança"
+                class="slide-img"
+              />
+            </div>
+          </div>
+
+          <button class="arrow right" onclick="nextSlide()">❯</button>
+
+          <div class="dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+          </div>
+        </section>
+
+        <section class="home-actions">
+          <a href="../html/formulario.html" class="main-btn">
+            Comece aqui a preencher seu formulário
+          </a>
+
+          <a href="#" class="home-card">👤 Perfil</a>
+
+          <a href="#" class="home-card">📁 Documentos</a>
+        </section>
+
+        <aside class="home-lists">
+          <div class="home-list">
+            <h4>Mais acessados</h4>
+
+            <ul>
+              <li>Currículo</li>
+              <li>CNH</li>
+              <li>RG Digital</li>
+              <li>E-Título</li>
+              <li>Consultar CPF</li>
+            </ul>
+          </div>
+
+          <div class="home-list">
+            <h4>Destaque</h4>
+
+            <ul>
+              <li>Passaporte</li>
+              <li>CNH</li>
+              <li>RG Digital</li>
+              <li>E-Título</li>
+              <li>Comprovante de Residência</li>
+            </ul>
+          </div>
+        </aside>
       </section>
     </main>
 
     <footer id="footer"></footer>
 
-    <script src="/javacript/componentes.js"></script>
+    <script src="../javacript/talaPrincipall.js"></script>
+    <script src="../javacript/componentes.js"></script>
   </body>
 </html>
